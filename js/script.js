@@ -13,3 +13,5 @@ const remoteBtn = n => {
 btnOpen.addEventListener('click', closeBtn);
 btnClose.addEventListener('click', remoteBtn);
 exampleModal.addEventListener('click', remoteBtn);
+
+AOS.init();
