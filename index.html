@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Линия права</title>
-    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/response.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -87,7 +87,6 @@
                     <div class="row">
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <div class="form__wrapper">
-
                                 <h2 class="form__title">
                                     <img class="form__icon" src="img/form-icon.png" alt="icon">Заказать бесплатную
                                     консультацию. <span>Наши юристы помогут
@@ -96,7 +95,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <form id="form1" autocomplete="disabled" class="form__items" action="#">
+                            <form id="form1" class="form__items" action="#">
                                 <div class="row">
                                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                         <input class="form__name" autocomplete="disabled" type="text"
@@ -430,7 +429,6 @@
                     <div class="row">
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <div class="form__wrapper">
-
                                 <h2 class="form__title">
                                     <img class="form__icon" src="img/form-icon.png" alt="icon">Заказать бесплатную
                                     консультацию. <span>Наши юристы помогут
@@ -439,7 +437,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <form id="form1" autocomplete="disabled" class="form__items" action="#">
+                            <form id="form2" class="form__items" action="#">
                                 <div class="row">
                                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                         <input class="form__name" autocomplete="disabled" type="text"
@@ -561,23 +559,23 @@
                         </div>
                     </div>
                 </div>
-                <form autocomplete="disabled" class="reviews__form">
+                <form class="reviews__form">
                     <div class="container">
                         <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-12 col-sm-12">
                             <h2 class="reviews__form-title">
                                 Добавить отзыв
                             </h2>
                             <div class="reviews__form-name">
-                                <label for="">Имя и фамилия <span>*</span></label>
-                                <input type="text">
+                                <label for="name">Имя и фамилия <span>*</span></label>
+                                <input id="name" type="text">
                             </div>
                             <div class="reviews__form-email">
-                                <label for="">E-mail <span>*</span></label>
-                                <input type="email">
+                                <label for="email">E-mail <span>*</span></label>
+                                <input id="email" type="email">
                             </div>
                             <div class="reviews__form-text">
-                                <label for="">Отзыв <span>*</span></label>
-                                <textarea name="text"></textarea>
+                                <label for="text">Отзыв <span>*</span></label>
+                                <textarea id="text" name="text"></textarea>
                             </div>
                             <button class="reviews__form-btn">Отправить</button>
                         </div>
@@ -637,7 +635,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xxl-11 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <form id="form1" autocomplete="disabled" class="form__items" action="#">
+                                        <form id="form3" class="form__items" action="#">
                                             <div class="row">
                                                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                     <input class="form__name" autocomplete="disabled" type="text"
@@ -674,8 +672,8 @@
     </main>
 
 
-    <!-- Модальное окно -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- modal window -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -700,7 +698,7 @@
                                 <button id="btnClose" class="btn-close" type="button" data-bs-dismiss="modal"
                                     aria-label="Закрыть"></button>
                                 <div class="col-xxl-11 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <form id="form1" autocomplete="disabled" class="form__items" action="#">
+                                    <form id="form4" autocomplete="disabled" class="form__items" action="#">
                                         <div class="row">
                                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                 <input class="form__name" autocomplete="disabled" type="text"
@@ -726,9 +724,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- / modal window -->
 
-        <script src="js/script.js"></script>
-        <script src="vendore/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="vendore/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
